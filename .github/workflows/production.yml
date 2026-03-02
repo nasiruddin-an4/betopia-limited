@@ -1,0 +1,31 @@
+name: CI/CD Production Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+
+# 1. Concurrency Control
+# Ensures that if you push twice quickly, the second deploy waits for the first to finish.
+concurrency: 
+  group: production-deployment
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.SSH }}
+          script: |
+            set -e
+            cd /var/www/new_betopialimited
+            ./.script/production.sh

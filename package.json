@@ -1,0 +1,47 @@
+{
+  "name": "betopia-ltd-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^6.1.0",
+    "@ant-design/nextjs-registry": "^1.3.0",
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "@heroicons/react": "^2.2.0",
+    "antd": "^6.1.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.26",
+    "git-filter-repo": "^0.0.30",
+    "lucide-react": "^0.562.0",
+    "motion": "^12.23.26",
+    "next": "^16.1.6",
+    "next-share": "^0.27.0",
+    "nodemailer": "^7.0.12",
+    "postcss": "^8.5.6",
+    "react": "19.2.3",
+    "react-awesome-reveal": "^4.3.1",
+    "react-dom": "19.2.3",
+    "react-fast-marquee": "^1.6.5",
+    "react-icons": "^5.5.0",
+    "sweetalert2": "^11.26.17",
+    "swiper": "^12.0.3",
+    "tailwind-merge": "^3.4.0"
+  },
+  "devDependencies": {
+    "@ant-design/v5-patch-for-react-19": "^1.0.3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^7.0.9",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.8",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
